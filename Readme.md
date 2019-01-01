@@ -65,7 +65,6 @@ binding.setMovie(new Movie(...));
 - Auto method will call with image view and url
 
 ```
-/**
      * Image url.
      *
      * @param imageView the image view
