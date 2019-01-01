@@ -62,6 +62,20 @@ binding.setMovie(new Movie(...));
 
 </layouyt>
 ```
+- Auto method will call with image view and url
+
+```
+/**
+     * Image url.
+     *
+     * @param imageView the image view
+     * @param url       the url
+     */
+    @BindingAdapter("app:imageUrl")
+    public static void imageUrl(ImageView imageView, String url) {
+      Glide.with(imageView).load(url).into(imageView);
+    }
+```
 
 - Advantage
 With findViewById you’d have 40 lines of code, with Butterknife – 20, with DataBinding – 2. Two lines! Data Binding is obvious winner here
